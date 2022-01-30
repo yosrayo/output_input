@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <app-liste (newItemEvent)="req($event)"></app-liste>
+        </div>
+        <div class="col-md-7">
+            <app-details *ngIf="nom" [nomCandidat]="nom"  ></app-details>
+        </div>
+    </div>
+</div>
